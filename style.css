@@ -1,0 +1,51 @@
+body{
+    background-color: #37D4F0;
+    color: #464C4C; 
+}
+
+.secondary{
+    color: azure;
+}
+
+.background-secondary{
+    background-color: #E080FD;
+}
+
+.accent{
+    color: #fff;
+}
+
+.background-accent{
+    background-color: #fff;
+}
+
+.btn-custom{
+    display: flex;
+    justify-content: center;
+    margin-top: 5vh;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: solid 1px #464C4C;
+    border-radius: 10px;
+    color: #464C4C;
+    font-weight: 500;
+    width: 30%;
+}
+
+.header-col{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.col-custom{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: solid 2px #464C4C;
+}
+
