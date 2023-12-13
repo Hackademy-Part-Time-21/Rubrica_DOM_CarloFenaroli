@@ -1,4 +1,5 @@
 let contenitoreContatti = document.querySelector("#contenitoreContatti");
+let mostraContattiBtn = document.querySelector("#mostraContattiBtn");
 const rubrica = {
     'contatti' : [
         {nome : "Leonardo", numero : "34694030394"},
@@ -9,7 +10,7 @@ const rubrica = {
     mostraContatti : function(){
         this.contatti.forEach((contatto) => {
             let cardContatto = document.createElement("div");
-            cardContatto.classList.add("background-accent", "p-5", "col-custom");
+            cardContatto.classList.add("background-secondary", "p-5", "col-custom");
             cardContatto.innerHTML = `
             <h6>${contatto.nome}</h6>
             <p>${contatto.numero}</p>
@@ -19,3 +20,17 @@ const rubrica = {
     },
 }
 rubrica.mostraContatti();
+let check = false;
+mostraContattiBtn.addEventListener("click", ()=> {
+    if(!check){
+        contenitoreContatti.innerHTML = "";
+        rubrica.mostraContatti();
+        check = true;
+        mostraContattiBtn.innerHTML = "Nascondi Contatti";
+    }else{
+        contenitoreContatti.innerHTML = "";
+        check = false;
+        mostraContattiBtn.innerHTML = "Mostra Contatti";
+    }
+    
+})
