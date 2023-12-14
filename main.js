@@ -1,5 +1,7 @@
 let contenitoreContatti = document.querySelector("#contenitoreContatti");
 let mostraContattiBtn = document.querySelector("#mostraContattiBtn");
+let inputNome = document.querySelector("#inputNome");
+let inputNumero = document.querySelector("#inputNumero")
 const rubrica = {
     'contatti' : [
         {nome : "Leonardo", numero : "34694030394"},
