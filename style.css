@@ -40,3 +40,7 @@ body{
     flex-wrap: wrap;
 }
 
+.icona{
+    cursor: pointer;
+}
+
